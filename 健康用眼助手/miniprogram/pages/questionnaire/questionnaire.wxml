@@ -1,0 +1,138 @@
+<!--index1/index1.wxml-->
+<view style="color:green;font-size: larger;">用眼健康评估测试</view>
+
+<view style="color:green;">1.你每天使用电子产品的时长在？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange1A">
+                    <text>4小时以上</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange1B">
+                    <text>2小时到4小时</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange1C">
+                    <text>2小时以下</text>
+                </radio>
+            </radio-group>
+
+<view style="color:green;">2.你使用电子产品的休息间隔是多久？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange2A">
+                    <text>做完手头项目为止</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange2B">
+                    <text>1个半小时左右</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange2C">
+                    <text>每隔40分钟</text>
+                </radio>
+            </radio-group>
+
+<view style="color:green;">3.你睡前玩手机吗？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange3A">
+                    <text>经常</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange3B">
+                    <text>偶尔</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange3C">
+                    <text>从不</text>
+                </radio>
+            </radio-group>
+<view style="color:green;">4.你关灯玩手机的频率怎么样？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange4A">
+                    <text>经常</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange4B">
+                    <text>几天会有那么一次</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange4C">
+                    <text>极少或者从不</text>
+                </radio>
+            </radio-group>
+
+<view style="color:green;">5.你在床上玩手机是坐着还是躺着？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange5A">
+                    <text>躺着</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange5B">
+                    <text>坐着</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange5C">
+                    <text>我在床上不玩手机</text>
+                </radio>
+            </radio-group>
+<view style="color:green;">6.你经常熬夜吗？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange6A">
+                    <text>是的，很少早睡</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange6B">
+                    <text>一周里面有一半时间</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange6C">
+                    <text>规律作息，极少或从不熬夜</text>
+                </radio>
+            </radio-group>
+
+<view style="color:green;">7.你的饮食习惯是？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange7A">
+                    <text>经常和油炸食品，辛辣食品打交道</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange7B">
+                    <text>两三天会吃些不健康食品</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange7C">
+                    <text>比较清淡</text>
+                </radio>
+            </radio-group>
+        
+<view style="color:green;">8.你的学习工作场所光照环境如何？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange8A">
+                    <text>我往往只专注手上的事，不关心环境</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange8B">
+                    <text>等眼睛感到不舒服时会去调节</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange8C">
+                    <text>时刻保持</text>
+                </radio>
+            </radio-group>
+
+<view style="color:green;">9.你会定期去医院或者相关场所检查视力吗？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange9A" >
+                    <text>除非戴眼镜也不怎么看得清才去</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange9B">
+                    <text>如果发现视力下降会及时去检查</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange9C">
+                    <text>会定期去检查视力</text>
+                </radio>
+            </radio-group>
+
+<view style="color:green;">10.你掌握很多用眼健康知识吗？</view>
+<radio-group class="radio-group">
+                <radio class="radio" bindtap="radioChange10A">
+                    <text>知之甚少</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange10B">
+                    <text>略知一二</text>
+                </radio>
+                <radio class="radio" bindtap="radioChange10C">
+                    <text>在姿势，环境，作息，饮食等方面</text>
+                    <text>\n</text>
+                    <text>都清楚</text>
+                </radio>
+            </radio-group>
+<button style="color: rgb(51, 107, 226)" bindtap="SumScore">查看结果</button>
+<view style="width: 750rpx; height: 94rpx; display: block; box-sizing: border-box">您的用眼健康评估为:</view>
+<view class="td" style="color: rgb(115, 204, 64);font-size: xx-large;" wx:if="{{score<=18&&score!=0}}">很健康</view>
+<view class="td" style="color: rgb(59, 156, 132);font-size: xx-large;" wx:if="{{score<=30&&score>18}}">比较健康</view>
+<view class="td" style="color: rgb(60, 154, 209);font-size: xx-large;" wx:if="{{score<=42&&score>30}}">不健康</view>
+<view class="td" style="color: rgba(211, 9, 53, 0.61);font-size: xx-large;" wx:if="{{score>42}}">极度不健康</view>

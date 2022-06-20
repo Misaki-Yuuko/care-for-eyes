@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/recording/recording",
+    "pages/rest/rest",
+    "pages/questionnaire/questionnaire"
+  ],
+  "tabBar": {  
+    "list":
+     [
+      {
+        "pagePath":"pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/首页icon.png",
+        "selectedIconPath": "icon/首页selected.png"
+      },
+      {
+        "pagePath":"pages/questionnaire/questionnaire",
+        "text": "检测",
+        "iconPath": "icon/问卷icon.png",
+        "selectedIconPath": "icon/问卷selected.png"
+      },
+      {
+        "pagePath":"pages/recording/recording", 
+        "text": "记录",
+        "iconPath": "icon/一言icon.png",
+        "selectedIconPath": "icon/一言selected.png"
+      },
+      {
+        "pagePath":"pages/rest/rest", 
+        "text": "休息",
+        "iconPath": "icon/休息icon.png",
+        "selectedIconPath": "icon/休息selected.png"
+      }
+    ],
+    "color": "#757570",
+    "selectedColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "position": "bottom",
+    "borderStyle": "black"
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "健康用眼助手",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

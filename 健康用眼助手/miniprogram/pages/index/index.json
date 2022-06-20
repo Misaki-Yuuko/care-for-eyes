@@ -1,0 +1,9 @@
+{
+    "usingComponents": {},
+    "window":{
+      "backgroundTextStyle":"light",
+      "navigationBarBackgroundColor": "#303030",
+      "navigationBarTitleText": "健康用眼",
+      "enablePullDownRefresh":true
+    }
+  }

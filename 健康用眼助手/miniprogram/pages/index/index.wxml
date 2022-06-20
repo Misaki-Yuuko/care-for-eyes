@@ -1,0 +1,11 @@
+<view class="container">
+	<image class='background' src="https://i.bmp.ovh/imgs/2021/09/8fbc3696e42b4e65.png" mode="aspectFill" style="position: fixed; left: 0rpx; top: 0rpx">
+	</image>
+	<view class="title" style="color: darkgrey;" >今天你健康用眼了吗</view> 
+    <view style="color: darkgrey;position: relative;top: 200rpx" >
+	<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{tips}}</text>
+	</view> 
+	  <button style="color: #857E95; position: relative; left: 248rpx; top: 698rpx"  size="mini" plain="true" bindtap="getData">随机护眼贴士</button>
+</view>
+<view>
+</view>

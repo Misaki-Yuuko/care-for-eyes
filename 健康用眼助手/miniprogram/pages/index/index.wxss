@@ -1,0 +1,32 @@
+/**index.wxss**/
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:x-large;
+    font-weight: bolder;
+  }
+  .background {
+    padding: 0rpx;
+    width: 100%;
+    height: 100%;
+    position:fixed; 
+    background-size:100% 100%;
+    z-index: -1;
+  }
+  .butt{
+    align-items: center;
+    width: 100%;
+    margin: 60rpx 10rpx 10rpx 10rpx;
+  }
+  .center {
+    display:block;
+    left: 275rpx;
+    right: 0;
+    margin:0 auto;  
+    color: #ffffff;
+    align-items: center;
+    width: 100%;
+    margin: 750rpx 50rpx 10rpx 10rpx;
+  }
+  

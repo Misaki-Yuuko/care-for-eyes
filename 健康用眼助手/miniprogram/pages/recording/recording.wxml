@@ -1,0 +1,15 @@
+<!--index/index.wxml-->
+<view class="block">
+<text>上传今日使用手机时长</text>
+</view>
+<input type="number" placeholder="请输入上传日期(1-31之间的整数)" bindinput="ChangeDay"></input>
+<input type="number" placeholder="请输入手机使用时长" bindinput="ChangeTime"></input>
+<button bindtap="Addtimes">上传改日使用时长</button>
+<input type="number" placeholder="请输入查询日期(1-31之间的整数)" bindinput="OutDay" class="block"></input>
+<button bindtap="Gettimes">获取记录</button>
+<view class="block">本月第{{OutD}}天手机使用时长为：{{OutT}}小时</view>
+<button bindtap="GetAvg">查看平均每日使用时长</button>
+<view class="block">本月上传有效日期天数：{{RDn}}天</view>
+<view class="block">本月手机累计使用时长：{{RDt}}小时</view>
+<view class="block">本月平均每日使用时长为：{{Avg}}小时</view>
+
